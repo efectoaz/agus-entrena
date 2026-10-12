@@ -1,0 +1,14 @@
+﻿.footer {
+  padding: 28px 7%;
+  border-top: 1px solid #e7e5de;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer p { color: #777970; font-size: .85rem; margin: 0; }
+
+@media (max-width: 500px) {
+  .footer { flex-direction: column; text-align: center; }
+}
