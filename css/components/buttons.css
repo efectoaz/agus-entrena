@@ -3,15 +3,16 @@
   justify-content: center;
   align-items: center;
   padding: 14px 23px;
-  background: #72865c;
+  background: #D76BB5;
   color: white;
-  border: 1px solid #72865c;
+  border: 1px solid #D76BB5;
   border-radius: 4px;
   font-size: .8rem;
   font-weight: 700;
   letter-spacing: .5px;
   transition: background .2s, transform .2s;
-}
 
-.button:hover { background: #586b45; transform: translateY(-2px); }
+  border-color: #D76BB5;}
+
+.button:hover { background: #B65391; transform: translateY(-2px); }
 .button-small { padding: 10px 15px; }

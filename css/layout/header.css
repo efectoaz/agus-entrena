@@ -5,8 +5,9 @@
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  border-bottom: 1px solid #e7e5de;
-}
+  border-bottom: 1px solid #D76BB5;
+
+  background: #343238;}
 
 .logo {
   font-size: 1.2rem;
@@ -15,16 +16,17 @@
   white-space: nowrap;
 }
 
-.logo span { color: #72865c; }
+.logo span { color: #D76BB5; }
 
 .nav {
   display: flex;
   align-items: center;
   gap: 28px;
   font-size: .9rem;
-}
 
-.nav a:not(.button):hover, .text-link:hover { color: #72865c; }
+  color: #F7F4F6;}
+
+.nav a:not(.button):hover, .text-link:hover { color: #D76BB5; }
 
 .menu-toggle {
   display: none;
@@ -32,11 +34,15 @@
   background: transparent;
   font-size: 1.5rem;
   cursor: pointer;
-}
+
+  color: #F7F4F6;}
 
 @media (max-width: 650px) {
-  .header { position: relative; padding: 18px 5%; }
-  .menu-toggle { display: block; }
+  .header { position: relative; padding: 18px 5%; 
+  background: #343238;
+  border-bottom: 1px solid #D76BB5;}
+  .menu-toggle { display: block; 
+  color: #F7F4F6;}
   .nav {
     display: none;
     position: absolute;
@@ -45,11 +51,59 @@
     right: 0;
     z-index: 10;
     padding: 24px 5%;
-    background: #f8f7f3;
-    border-bottom: 1px solid #e7e5de;
+    background: #343238;
+    border-bottom: 1px solid #191919;
     flex-direction: column;
     align-items: stretch;
     gap: 18px;
-  }
+  
+  color: #F7F4F6;}
   .nav.is-open { display: flex; }
 }
+
+/* HEADER-CARTELERA-CLASICA */
+.header {
+  background: #F7F4F6;
+  color: #343238;
+  border-bottom: 3px double #D76BB5;
+}
+
+.logo {
+  color: #343238;
+}
+
+.logo span {
+  color: #B65391;
+}
+
+.nav a:not(.button) {
+  color: #343238;
+}
+
+.nav a:not(.button):hover,
+.text-link:hover {
+  color: #B65391;
+}
+
+.header .button {
+  background: #D76BB5;
+  color: #FFFFFF;
+  border-color: #D76BB5;
+}
+
+.header .button:hover {
+  background: #B65391;
+  border-color: #B65391;
+}
+
+@media (max-width: 650px) {
+  .nav {
+    background: #F7F4F6;
+    border-bottom: 3px double #D76BB5;
+  }
+
+  .menu-toggle {
+    color: #343238;
+  }
+}
+/* FIN HEADER-CARTELERA-CLASICA */
