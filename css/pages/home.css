@@ -121,3 +121,15 @@
   border-top: 3px solid #D76BB5;
 }
 /* FIN AGUS-CINE-CLASICO */
+
+/* ELIMINAR DECORACIONES DEL HERO SOLO EN MOVILES */
+@media (max-width: 650px) {
+  .hero::before,
+  .hero::after {
+    content: none !important;
+    display: none !important;
+    border: 0 !important;
+    background: none !important;
+  }
+}
+/* FIN DECORACIONES MOVILES */
